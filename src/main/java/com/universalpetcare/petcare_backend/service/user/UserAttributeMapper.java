@@ -2,7 +2,9 @@ package com.universalpetcare.petcare_backend.service.user;
 
 import com.universalpetcare.petcare_backend.model.User;
 import com.universalpetcare.petcare_backend.request.RegistrationRequest;
+import org.springframework.stereotype.Component;
 
+@Component
 public class UserAttributeMapper {
     public void setCommonAttributes(RegistrationRequest source, User target){
         target.setEmail(source.getEmail());
@@ -15,3 +17,4 @@ public class UserAttributeMapper {
         target.setUserType(source.getUserType());
     }
 }
+
