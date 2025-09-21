@@ -10,7 +10,7 @@ import lombok.Setter;
 
 @Getter
 @Setter
-@AllArgsConstructor
+//@AllArgsConstructor
 @NoArgsConstructor
 @Entity
 @PrimaryKeyJoinColumn(name="patient_id")

@@ -27,7 +27,12 @@ public class User {
 //    @Column(unique = true, nullable = false)
     private String email;
 
+
+
     private String password;
     private String userType;   // e.g., "VETERINARIAN"
     private boolean isEnabled;
+
+    @Transient // This annotation in JPA/Hibernate is used to mark a field in an entity class that should not be persisted (i.e., not stored) in the database.
+    private String specialization;
 }
